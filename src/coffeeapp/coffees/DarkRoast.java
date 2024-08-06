@@ -9,6 +9,17 @@ public class DarkRoast extends Beverage {
     
     @Override
     public double cost() {
-        return 0.99;
+        double myReturn;
+        if(this.size == Size.TALL) {
+            myReturn = 0.99;
+        } 
+        else if(this.size == Size.GRANDE) {
+            myReturn = 1.19;
+        }
+        else {
+            myReturn = 1.29;
+        }
+        
+        return myReturn;
     }
 }

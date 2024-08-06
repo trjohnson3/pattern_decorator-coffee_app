@@ -9,6 +9,17 @@ public class Espresso extends Beverage {
     
     @Override
     public double cost() {
-        return 1.99;
+        double myReturn;
+        if(this.size == Size.TALL) {
+            myReturn = 1.99;
+        } 
+        else if(this.size == Size.GRANDE) {
+            myReturn = 2.19;
+        }
+        else {
+            myReturn = 2.29;
+        }
+        
+        return myReturn;
     }
 }

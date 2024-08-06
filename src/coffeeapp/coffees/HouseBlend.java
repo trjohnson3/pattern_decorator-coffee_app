@@ -9,6 +9,17 @@ public class HouseBlend extends Beverage {
     
     @Override
     public double cost() {
-        return 0.89;
+        double myReturn;
+        if(this.size == Size.TALL) {
+            myReturn = 0.89;
+        } 
+        else if(this.size == Size.GRANDE) {
+            myReturn = 1.09;
+        }
+        else {
+            myReturn = 1.19;
+        }
+        
+        return myReturn;
     }
 }
